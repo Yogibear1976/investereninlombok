@@ -1,0 +1,113 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+enum Feature {
+  SNELLE_INTERNETVERBINDING
+  AIRCONDITIONING
+  SLIMME_WONINGFUNCTIES
+  BIJKEUKEN_SERVICE_RUIMTE
+  BAD_DOUCHECOMBINATIE
+  INTERCOM_SYSTEEM
+  BEVEILIGING
+  BBQ_RUIMTE
+  COWORKING_RUIMTE
+  SPRINKLER_INSTALLATIE
+  RECENT_GERENOVEERD
+  PRACHTIG_UITZICHT
+  VERHUUR_BEHEER
+}
+
+model Appointment {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  firstname       String    @db.String
+  lastname        String?   @db.String
+  email           String    @unique
+  phone           String    @db.String @unique
+  type            String    @unique
+  selectedDate    DateTime
+  time            String    @db.String
+  items           String[]
+  travelled       String    @db.String
+  when            String    @db.String
+  createdAt       DateTime  @default(now())
+}
+
+model Quickcontact {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  name            String    @db.String
+  email           String    @unique
+  phone           String    @db.String
+  question        String?   @db.String
+  createdAt       DateTime  @default(now())
+}
+
+model Property {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  name            String
+  nameExt         String?
+  description     String
+  descriptionExt  String
+  propertyOverview  String?
+  slug            String    @unique
+  location        String?
+  euroPrice       Int
+  indoPrice       Int
+  area            Int
+  images          String[]
+  features        Feature[]
+  bedrooms        Int?
+  bathrooms       Int?
+  livingArea      Int?
+  landArea        Int?
+  topography      String?
+  zoning          String?
+  access          String?
+  proximity       String?
+  type            String
+  ownership       Ownership 
+  yearCompleted   Int?
+  returnRoi       String?
+  payback         String?
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+}
+
+model Update {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  name            String
+  description     String
+  slug            String    @unique
+  location        String?
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Registration {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  email            String
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model BrochureRequest {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  firstname        String
+  lastname         String
+  email            String
+  property         String
+  createdAt        DateTime @default(now())
+}
+
+
+enum Ownership {
+  HGB
+  LEASEHOLD
+  SOLD
+}
