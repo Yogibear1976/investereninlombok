@@ -27,49 +27,57 @@ export const Steps = () => {
     {
       step: 2,
       title: "Vind je ideale locatie",
-      description: "desc1",
+      description:
+        "Bepaal in welke regio van Zuid-Lombok je wilt investeren. Of je nu kiest voor het toeristische Kuta, het rustige noorden of de culturele centra zoals Ubud, de locatie heeft een grote invloed op het rendement van je investering.",
       icon: <LocateIcon className="w-5 h-5 text-sky" />,
     },
     {
       step: 3,
       title: "Doe een bod en onderhandel",
-      description: "desc1",
+      description:
+        "Onderhandel over de prijs met de verkoper. Het is gebruikelijk om te onderhandelen in Indonesië, dus zorg ervoor dat je een goede deal krijgt.",
       icon: <BadgeEuro className="w-5 h-5 text-sky" />,
     },
     {
       step: 4,
       title: "Verzamel de juiste documenten",
-      description: "desc1",
+      description:
+        "Je hebt documenten nodig zoals je paspoort en de eigendomspapieren van het vastgoed. Controleer of alle papieren in orde zijn voordat je verder gaat met de koop.",
       icon: <FilesIcon className="w-5 h-5 text-sky" />,
     },
     {
       step: 5,
       title: "Eventueel: Zet een PMA op",
-      description: "desc1",
+      description:
+        "Als je een freehold eigendom wilt hebben, zul je een PMA moeten oprichten. Dit kan tijdrovend zijn, maar het biedt de mogelijkheid om land volledig in eigendom te hebben.",
       icon: <BriefcaseBusiness className="w-5 h-5 text-sky" />,
     },
     {
       step: 6,
       title: "Koop afronden bij de notaris",
-      description: "desc1",
+      description:
+        "Bij de aankoop van vastgoed in Indonesië is het verplicht om de transactie af te ronden bij een notaris. De notaris zorgt ervoor dat alle documenten correct worden geregistreerd.",
       icon: <Handshake className="w-5 h-5 text-sky" />,
     },
     {
       step: 7,
       title: "Betaling en bijkomende kosten",
-      description: "desc1",
+      description:
+        " Zodra de notariële akte is ondertekend, betaal je de koopprijs en eventuele extra kosten, zoals notariskosten en belastingen.",
       icon: <HandCoins className="w-5 h-5 text-sky" />,
     },
     {
       step: 8,
       title: "Registratie bij het Kadaster",
-      description: "desc1",
+      description:
+        "Nadat de transactie is voltooid, moet je het eigendom registreren bij het Indonesische kadaster, zodat het officieel op jouw naam staat.",
       icon: <NotebookPen className="w-5 h-5 text-sky" />,
     },
     {
       step: 9,
       title: "Property management door ons",
-      description: "desc1",
+      description:
+        "Van dagelijks onderhoud tot vijfsterren-gastenzorg: ons ervaren lokale team zorgt ervoor dat jouw villa in topconditie blijft, verhuurd wordt tegen de best mogelijke tarieven en elke gast een vlekkeloze ervaring beleeft.",
       icon: <KeySquare className="w-5 h-5 text-sky" />,
     },
   ];

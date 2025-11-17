@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import { Property } from "@prisma/client";
 import { Separator } from "@/components/ui/separator";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, TriangleAlert } from "lucide-react";
 import {
   formatArea,
   formatIdrPrice,
@@ -122,6 +122,15 @@ export const PropertyOverviewInfo = ({
               <span className="text-base text-muted-foreground uppercase">
                 ≈ {formatIdrPrice(indoPrice)}
               </span>
+              <div className="relative pl-4">
+                <TriangleAlert className="absolute left-0 top-0 w-3 h-3 text-warning" />
+
+                <p className="text-[10px] text-muted-foreground leading-tight indent-0">
+                  Prijzen in vreemde valuta zijn bedoeld als schatting en worden
+                  aangepast op basis van de wisselkoers tijdens de transactie.
+                  Alle transacties vinden plaats in Indonesische Rupiah.
+                </p>
+              </div>
             </div>
 
             <div className="h-px bg-muted my-4"></div>
