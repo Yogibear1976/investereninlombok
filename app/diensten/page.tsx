@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { PageHeader } from "@/components/headers/page-header";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
+import { Steps } from "@/components/sections/diensten/steps";
 
 export const metadata: Metadata = {
   title: {
@@ -63,6 +64,7 @@ export default function Diensten() {
           iconName="Handshake"
           title="Persoonlijke begeleiding voor uw vastgoed in Indonesië."
         />
+        <Steps />
       </main>
     </div>
   );

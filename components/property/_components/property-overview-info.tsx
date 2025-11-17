@@ -124,7 +124,7 @@ export const PropertyOverviewInfo = ({
               </span>
             </div>
 
-            <div className="h-px bg-border my-6"></div>
+            <div className="h-px bg-muted my-4"></div>
 
             {/* Overview */}
             <div className="flex flex-col gap-4">
@@ -149,7 +149,7 @@ export const PropertyOverviewInfo = ({
               ))}
             </div>
 
-            <div className="h-px bg-border my-6"></div>
+            <div className="h-px bg-muted my-4"></div>
 
             {/* Contact Agent */}
             <div className="flex flex-col gap-4">

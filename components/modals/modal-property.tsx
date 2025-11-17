@@ -1,10 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
-import { nl } from "date-fns/locale/nl";
-
-import { cn } from "@/lib/utils";
 
 import * as z from "zod";
 import axios from "axios";

@@ -78,9 +78,6 @@ export const HighLights = () => {
     <section>
       <div className="relative w-full flex flex-col items-center place-content-center gap-10 py-10 px-6">
         <div className="flex flex-col items-center justify-center gap-6">
-          <h6 className="font-medium text-xl text-muted-foreground">
-            Over mij
-          </h6>
           <AnimatedTooltip items={people} />
           <div className="md:max-w-2xl md:text-center">
             <h3 className="font-light tracking-tight text-4xl lg:text-5xl">

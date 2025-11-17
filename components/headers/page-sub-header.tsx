@@ -22,7 +22,7 @@ export const PageSubHeader = ({
   const IconComponent = Icons[iconName] as LucideIcon;
   return (
     <section className="relative overflow-hidden">
-      <div className="relative z-10 flex flex-col gap-4 px-4 my-8 md:mt-16 md:mb-10">
+      <div className="relative max-w-7xl mx-auto w-full z-10 flex flex-col gap-4 px-4 my-8 md:mt-16 md:mb-10">
         <div className="flex flex-row gap-0.5 md:gap-1">
           <IconComponent className="text-nature w-3 h-3 md:w-4 md:h-4" />
           <h3 className="text-xs font-medium tracking-wide uppercase text-muted-foreground md:text-sm">

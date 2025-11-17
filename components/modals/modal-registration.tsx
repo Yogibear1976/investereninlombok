@@ -1,11 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
-import { nl } from "date-fns/locale/nl";
-
-import { cn } from "@/lib/utils";
-
 import * as z from "zod";
 import axios from "axios";
 import { useState } from "react";
@@ -17,17 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Icons } from "../icons/Icons";
 
 import { toast } from "sonner";
-
 import { useRouter } from "next/navigation";
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectGroup,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 import {
   Dialog,
@@ -43,7 +28,6 @@ import {
   Form,
   FormControl,
   FormField,
-  FormDescription,
   FormItem,
   FormLabel,
   FormMessage,
@@ -59,7 +43,6 @@ interface ModalProps {
 
 export const ModalRegistration = ({
   title,
-  available,
   navbar,
   sky,
   width,
@@ -106,8 +89,8 @@ export const ModalRegistration = ({
       setIsSubmitting(false);
       reset();
       setOpen(false);
-      router.push(`/thankyou?email=${email}`);
-      toast("Geregistreerd als lid, check je email.");
+      router.push(`/thankyou?email=${email}`); // niet nodig, denk ik.
+      toast("Geregistreerd als potentieel investeerder, check je email.");
     } catch {
       toast.error("Uh oh! Er ging iets mis.");
     }

@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { IconBadge } from "@/utils/icon-badge";
-import { Property } from "@prisma/client";
+import { Ownership, Property } from "@prisma/client";
 import { formatDistance, subDays } from "date-fns";
 import { nl } from "date-fns/locale";
 import { formatArea } from "@/lib/format";
@@ -37,6 +37,7 @@ export const PropertyCardSmall = ({ property }: PropertyCardSmallProps) => {
     slug,
     name,
     description,
+    ownership,
     area,
     bathrooms,
     euroPrice,
@@ -54,6 +55,10 @@ export const PropertyCardSmall = ({ property }: PropertyCardSmallProps) => {
       <article className="self-start w-full">
         <div className="flex flex-col items-start gap-1 cursor-pointer">
           <div className="relative w-full h-[250px] overflow-hidden">
+            {/* Top-left label */}
+            <span className="absolute top-2 z-20 bg-muted-foreground text-white text-[10px] font-medium px-2 py-0.5">
+              {ownership}
+            </span>
             {images?.[0] ? (
               <Image
                 fill
@@ -134,8 +139,8 @@ export const PropertyCardSmall = ({ property }: PropertyCardSmallProps) => {
                 <p className="text-base font-bold md:text-lg">
                   {formatEuroPrice(euroPrice)}
                 </p>
-                <p className="text-base font-medium text-muted-foreground md:text-lg">
-                  {formatIdrPrice(indoPrice)}
+                <p className="text-xs font-medium text-muted-foreground md:text-sm">
+                  ≈ {formatIdrPrice(indoPrice)}
                 </p>
               </div>
             </div>

@@ -35,7 +35,7 @@ export const OfferingSection = ({ properties }: OfferingSectionProps) => {
       "
         >
           {/* Filters */}
-          <div className="flex gap-3 shrink-0">
+          <div className="flex gap-2 sm:gap-3 shrink-0">
             {PROPERTY_TYPES.map((type) => (
               <Button
                 key={type}
@@ -56,7 +56,7 @@ export const OfferingSection = ({ properties }: OfferingSectionProps) => {
           {/* Alle projecten aligned to flex-end */}
           <Link
             href="/aanbod"
-            className="text-sm whitespace-nowrap hover:underline ml-auto shrink-0"
+            className="text-xs sm:text-sm whitespace-nowrap hover:underline ml-auto shrink-0"
           >
             Alle projecten
           </Link>

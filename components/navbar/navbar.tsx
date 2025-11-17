@@ -129,7 +129,7 @@ export const NavBar = () => {
             <ModalAppointment
               title={
                 <>
-                  <span className="md:hidden">Afspraak</span>
+                  <span className="md:hidden">Afspraak?</span>
                   <span className="hidden md:inline">Afspraak maken</span>
                 </>
               }

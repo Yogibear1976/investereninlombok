@@ -29,36 +29,43 @@ export const Footer = () => {
                 Wij helpen Nederlanders bij de aankoop of het bouwen van een
                 vakantiewoning bestemd voor verhuur of wonen in Zuid-Lombok.
               </p>
-              <div className="mt-2">
-                <div className="flex justify-start items-center gap-2">
-                  <Icons.email className="text-muted-foreground h-4 w-4" />
-                  <p className="my-1 text-md font-medium opacity-80 hover:opacity-100 hover:text-sky transition duration-300 ease-in-out cursor-pointer">
+
+              <div className="flex justify-start items-center mt-6">
+                <h3 className="text-md font-light uppercase">Contact</h3>
+              </div>
+              <div className="mt-2 grid grid-cols-2 gap-3">
+                <div>
+                  <h4 className="text-xs uppercase font-light mb-1 text-muted-foreground">
+                    E-mail
+                  </h4>
+                  <div className="my-1 text-xs opacity-80 hover:opacity-100 hover:text-sky transition duration-300 ease-in-out cursor-pointer">
                     <a href="mailto:jochgem@investereninlombok.nl">
                       jochgem@investereninlombok.nl
                     </a>
-                  </p>
+                  </div>
                 </div>
-                <div className="flex justify-start items-center gap-2">
-                  <Icons.whatsapp className="text-nature h-4 w-4" />
+                <div>
+                  <h4 className="text-xs uppercase font-light mb-1 text-muted-foreground">
+                    WhatsApp
+                  </h4>
                   <Link
                     href={siteConfig.links.whatsapp}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <p className="my-1 text-md font-medium opacity-80 hover:opacity-100 hover:text-sky transition duration-300 ease-in-out cursor-pointer">
+                    <p className="my-1 text-xs opacity-80 hover:opacity-100 hover:text-sky transition duration-300 ease-in-out cursor-pointer">
                       +31 627 330 867
                     </p>
                   </Link>
                 </div>
               </div>
 
-              <div className="flex justify-start items-center gap-2 my-4">
-                <Icons.location className="text-muted-foreground h-4 w-4" />
-                <h3 className="text-md font-medium">locaties</h3>
+              <div className="flex justify-start items-center gap-2 mt-6">
+                <h3 className="text-md font-light uppercase">Office</h3>
               </div>
               <div className="mt-2 grid grid-cols-2 gap-3">
                 <div>
-                  <h4 className="text-sm mb-1 text-muted-foreground">
+                  <h4 className="text-xs uppercase font-light mb-1 text-muted-foreground">
                     Indonesië
                   </h4>
                   <p className="text-[11px]">588/226 Double U Condo</p>
@@ -66,7 +73,7 @@ export const Footer = () => {
                   <p className="text-[11px]">Lad Prao, Bangkok 10230</p>
                 </div>
                 <div>
-                  <h4 className="text-sm mb-1 text-muted-foreground">
+                  <h4 className="text-xs uppercase font-light mb-1 text-muted-foreground">
                     Maleisië
                   </h4>
                   <p className="text-[11px]">Kerkstraat 38</p>

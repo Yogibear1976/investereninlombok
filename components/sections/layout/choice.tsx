@@ -34,19 +34,18 @@ export const Choice = () => {
   const { theme } = useTheme();
 
   return (
-    <section className="flex flex-col items-center pb-4 w-full pt-8 sm:pt-12 lg:pt-24">
-      <div className="flex flex-col items-center w-full px-4 relative overflow-visible">
+    <section className="max-w-7xl mx-auto px-4 flex flex-col items-center pb-4 pt-8 sm:pt-12 lg:pt-24">
+      <div className="flex flex-col items-center">
         <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10">
-          <div className="relative w-full">
-            <div className="flex items-end justify-between relative overflow-hidden">
-              <div className="flex-1 select-none whitespace-pre-wrap wrap-break-words">
-                <h2 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
-                  Je voorkeur
-                </h2>
-              </div>
+          <div className="w-full">
+            <div className="flex items-end justify-between">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
+                Je voorkeur
+              </h2>
             </div>
           </div>
-          <div className="grid w-full max-w-7xl gap-4 lg:grid-cols-3 mx-auto">
+
+          <div className="grid w-full gap-4 lg:grid-cols-3">
             {choiceCards.map((choice) => (
               <ChoiceCard key={choice.header} {...choice} />
             ))}

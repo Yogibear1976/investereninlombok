@@ -21,6 +21,7 @@ export const PropertyCardLarge = ({ property }: PropertyCardLargeProps) => {
     slug,
     name,
     euroPrice,
+    ownership,
     indoPrice,
     livingArea,
     bedrooms,
@@ -38,6 +39,10 @@ export const PropertyCardLarge = ({ property }: PropertyCardLargeProps) => {
       <article className="self-start w-full">
         <div className="flex flex-col items-start gap-1 cursor-pointer">
           <div className="relative w-full h-[600px] overflow-hidden">
+            {/* Top-left label */}
+            <span className="absolute top-2 z-20 bg-muted-foreground text-white text-[10px] font-medium px-2 py-0.5">
+              {ownership}
+            </span>
             {images[0] ? (
               <Image
                 src={images[0]}

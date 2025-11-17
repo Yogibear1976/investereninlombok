@@ -28,7 +28,7 @@ const toLowerFirst = (str: string): string =>
 export const PageHeader = ({ title, subheader, subject }: PageHeaderProps) => {
   return (
     <section className="bg-muted relative overflow-hidden">
-      <div className="px-4 flex flex-col gap-4 relative my-20 z-10">
+      <div className="max-w-7xl mx-auto w-full px-4 flex flex-col gap-4 relative my-20 z-10">
         <div className="justify-start">
           <Breadcrumb>
             <BreadcrumbList>

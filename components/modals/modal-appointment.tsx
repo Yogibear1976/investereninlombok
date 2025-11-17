@@ -229,7 +229,7 @@ export const ModalAppointment = ({
 
           <DialogDescription className="text-sm leading-relaxed">
             Vul hier alle velden in en klik op{" "}
-            <span className="font-semibold">‘verzenden’</span>.
+            <span className="font-semibold">'Verzenden'</span>.
           </DialogDescription>
 
           {/* CONTACT CARD */}

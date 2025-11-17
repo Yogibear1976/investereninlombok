@@ -16,15 +16,15 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Wat zijn de voordelen van werken met een Emigratie Consultant",
+    question: "Kan je vastgoed vanuit Nederland kopen?",
     answer:
-      "Samen met mij zetten we de puntjes op de 'i', je krijgt antwoord op al je vragen en ik breng orde in chaos en drukte rondom je emigratie. Je krijgt dat antwoord op je vragen zonder zelf uren te hoeven Googleen naar antwoorden vol met tegenstrijdige informatie. Werken met mij kan inzicht geven en houvast, en motivatie om door te zetten daar waar het eerst onmogelijk leek.",
+      "Vastgoed op afstand kopen in Lombok of Indonesië is tegenwoordig heel goed mogelijk. Dankzij moderne technologie en mijn deskundige begeleiding wordt het zelfs steeds gebruikelijker. Met virtuele rondleidingen en de juiste volmacht kun je volledig geïnformeerd een aankoop doen, waar ter wereld je ook bent.",
     value: "item-1",
   },
   {
-    question: "Hoe is je bereikbaarheid?",
+    question: "Kun je persoonlijk een villa kopen in Lombok?",
     answer:
-      "Ik hanteer hele korte lijnen in mijn dienstverlening en ik ben heel duidelijk wat je kunt verwachten en hoe snel je terughoort en wat de werkwijze is. Zo neem ik binnen 24 uur contact met je op voor een afspraak, maar in de praktijk is dat vaak al binnen een paar uur.",
+      "Als particulier kun je gewoon een villa op Lombok kopen en verhuren. Over de netto huurinkomsten betaal je 20% belasting in Indonesië, al kunnen er in je eigen land nog extra belastingregels gelden. Je kunt er ook voor kiezen om via een PMA-bedrijf te investeren. Deze bedrijfsstructuur biedt fiscale voordelen en kan de totale belastingdruk verlagen, waardoor investeren in verhuurvastgoed op Lombok vaak nóg aantrekkelijker wordt.",
     value: "item-2",
   },
   {
@@ -58,8 +58,11 @@ export const Faqs = () => {
           beantwoord
         </h2>
         <h3 className="text-lg sm:text-xl text-muted-foreground mt-4 mb-12">
-          Hieronder de meest voorkomende vragen van andere emigranten en remote
-          workers.
+          Of je nu als particulier of als bedrijf wilt investeren in verhuur, of
+          juist in de aankoop en verkoop van vastgoed, Lombok biedt unieke
+          kansen die het eiland bijzonder aantrekkelijk maken voor buitenlandse
+          investeerders. Hieronder vind je antwoorden op de meest voorkomende
+          vragen.
         </h3>
         <div className="text-left">
           <Accordion type="single" collapsible className="w-full">

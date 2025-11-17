@@ -20,7 +20,7 @@ export const ChoiceCard = ({
   const [imgSrc, setImgSrc] = useState(imageUrl || "/placeholder.jpg");
 
   return (
-    <Link href={choiceLink} scroll={false}>
+    <Link href={choiceLink}>
       <article className="self-start w-full h-[350px] sm:h-[400px] lg:h-[475px]">
         <div className="flex flex-col justify-between items-start gap-6 w-full h-full overflow-hidden">
           <div className="w-full space-y-2">
