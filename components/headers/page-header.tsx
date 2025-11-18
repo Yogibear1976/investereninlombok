@@ -63,7 +63,7 @@ export const PageHeader = ({ title, subheader, subject }: PageHeaderProps) => {
           </Breadcrumb>
         </div>
         <div className="flex flex-col max-w-[89vw] md:max-w-2xl lg:max-w-3xl gap-4">
-          <h1 className=" font-medium tracking-tighter text-4xl md:text-6xl lg:text-7xl">
+          <h1 className=" font-medium tracking-tighter text-5xl md:text-6xl lg:text-7xl">
             {subject ? subject : title}
           </h1>
           <h3 className=" font-normal text-muted-foreground text-sm md:text-lg lg:text-xl">

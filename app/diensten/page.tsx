@@ -70,7 +70,7 @@ export default function Diensten() {
         <InvestorNote />
         <TwoImagesShort
           imgA={{ src: "/two-images/test_1.jpg", alt: "Voorzijde villa" }}
-          imgB={{ src: "/two-images/test_2.jpg", alt: "Zwembad en tuin" }}
+          imgB={{ src: "/two-images/test_3.jpg", alt: "Zwembad en tuin" }}
         />
       </main>
     </div>

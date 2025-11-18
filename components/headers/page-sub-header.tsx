@@ -31,7 +31,7 @@ export const PageSubHeader = ({
         </div>
 
         <div className="flex flex-col w-full md:max-w-3xl lg:max-w-6xl gap-2 sm:gap-4">
-          <h1 className="text-xl font-light tracking-tight md:text-3xl lg:text-4xl">
+          <h1 className="text-2xl font-light tracking-tight md:text-3xl lg:text-4xl">
             {title}
           </h1>
           <p className="text-xs sm:text-base text-muted-foreground leading-tight">
