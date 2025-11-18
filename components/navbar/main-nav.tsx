@@ -41,7 +41,7 @@ export const MainNav = () => {
                     >
                       <div className="mt-0 mb-2">
                         <h3 className="text-xl text-white tracking-tight font-bold leading-tight">
-                          Wat doen we?
+                          Welke stappen?
                         </h3>
                       </div>
                       <p className="text-white text-xs font-normal leading-tight">

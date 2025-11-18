@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/headers/page-header";
+import { PageSubHeader } from "@/components/headers/page-sub-header";
+import { Packages } from "@/components/sections/property-management/packages";
 
 export const metadata: Metadata = {
   title: {
@@ -56,6 +58,12 @@ export default function PropertyManagement() {
           subheader="Laat je woning regelmatig controleren door ons lokale team. Wij zorgen voor een grondige inspectie van de staat van je villa, zodat je investering veilig, goed onderhouden en verhuurklaar blijft. Ook als je zelf niet op het eiland bent."
           subject="Property management"
         />
+        <PageSubHeader
+          smallTitleTop="Packages"
+          iconName="Handshake"
+          title="Wij beheren niet alleen villa's. Wij helpen eigenaren om duurzame waarde op te bouwen met betere boekingen, lokale ondersteuning en zorgvuldig vastgoedbeheer dat je investering beschermt."
+        />
+        <Packages />
         <h1>
           Laat je woning regelmatig controleren door ons lokale team. Wij zorgen
           voor een grondige inspectie van de staat van je villa, zodat je

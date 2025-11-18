@@ -20,7 +20,7 @@ export const HeroSection = () => {
         <div className="flex flex-col flex-nowrap items-center justify-start gap-4 flex-[1_0_0px] w-full max-w-[1952px] h-px relative overflow-visible px-4">
           <div className="absolute inset-0 -z-10">
             <Image
-              src={theme === "dark" ? "/hero/test.jpg" : "/hero/test.jpg"}
+              src={theme === "dark" ? "/hero/test.jpg" : "/hero/test_2.jpg"}
               alt="SmartMoveAsia Investment Platform"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -51,7 +51,7 @@ const FAQList: FAQProps[] = [
 export const Faqs = () => {
   const router = useRouter();
   return (
-    <section className="w-full py-20 sm:py-24 lg:py-32">
+    <section className="w-full pt-8 sm:pt-12 lg:pt-24">
       <div className="max-w-7xl px-4 mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight">
           Enkele <span className="text-sky font-medium">vragen</span>, hier
@@ -80,12 +80,12 @@ export const Faqs = () => {
         </div>
         <div className="mt-10 text-center">
           <p className="font-medium">
-            Staat je vraag er niet bij?{" "}
+            Staat je vraag er niet bij? Ga naar mijn{" "}
             <span
               onClick={() => router.push("/contact")}
               className="text-sky font-semibold hover:underline cursor-pointer transition-colors"
             >
-              Ga naar mijn contactpagina
+              contactpagina
             </span>
             .
           </p>

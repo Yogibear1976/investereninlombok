@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/headers/page-header";
 import { Faqs } from "@/components/sections/over-ons/faqs";
 import { HighLights } from "@/components/sections/over-ons/highlights";
 import { About } from "@/components/sections/over-ons/about";
+import { TwoImagesShort } from "@/components/sections/over-ons/two-images-short";
 
 export const metadata: Metadata = {
   title: {
@@ -61,6 +62,10 @@ export default function OverOns() {
         />
         <About />
         <HighLights />
+        <TwoImagesShort
+          imgA={{ src: "", alt: "Voorzijde villa" }}
+          imgB={{ src: "", alt: "Zwembad en tuin" }}
+        />
         <Faqs />
       </main>
     </div>

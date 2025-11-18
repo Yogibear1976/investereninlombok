@@ -21,63 +21,63 @@ export const Steps = () => {
       step: 1,
       title: "Neem contact op met ons",
       description:
-        "Wij werken met een betrouwbaar netwerk van lokale makelaars en advocaten die je begeleiden tijdens het hele aankoopproces.",
+        "We brengen je in contact met onze betrouwbare lokale makelaars en advocaten, die je stap voor stap begeleiden tijdens het hele aankoopproces.",
       icon: <MessageCircleMoreIcon className="w-5 h-5 text-sky" />,
     },
     {
       step: 2,
-      title: "Vind je ideale locatie",
+      title: "Kies je ideale locatie",
       description:
-        "Bepaal in welke regio van Zuid-Lombok je wilt investeren. Of je nu kiest voor het toeristische Kuta, het rustige noorden of de culturele centra zoals Ubud, de locatie heeft een grote invloed op het rendement van je investering.",
+        "Bedenk in welke regio van Zuid-Lombok je wilt investeren. Of je nu kiest voor het bruisende Kuta, rustige kustgebieden of opkomende dorpen: de locatie bepaalt voor een groot deel je rendement.",
       icon: <LocateIcon className="w-5 h-5 text-sky" />,
     },
     {
       step: 3,
       title: "Doe een bod en onderhandel",
       description:
-        "Onderhandel over de prijs met de verkoper. Het is gebruikelijk om te onderhandelen in Indonesië, dus zorg ervoor dat je een goede deal krijgt.",
+        "Goed onderhandelen hoort erbij in Indonesië. Samen zorgen we ervoor dat je een eerlijke prijs betaalt en een goede deal sluit.",
       icon: <BadgeEuro className="w-5 h-5 text-sky" />,
     },
     {
       step: 4,
-      title: "Verzamel de juiste documenten",
+      title: "Verzamel de benodigde documenten",
       description:
-        "Je hebt documenten nodig zoals je paspoort en de eigendomspapieren van het vastgoed. Controleer of alle papieren in orde zijn voordat je verder gaat met de koop.",
+        "Zorg dat alle papieren in orde zijn, zoals je paspoort en de eigendomsdocumenten van het vastgoed. Wij helpen je controleren of alles klopt voordat je verder gaat.",
       icon: <FilesIcon className="w-5 h-5 text-sky" />,
     },
     {
       step: 5,
-      title: "Eventueel: Zet een PMA op",
+      title: "Optioneel: Richt een PMA op",
       description:
-        "Als je een freehold eigendom wilt hebben, zul je een PMA moeten oprichten. Dit kan tijdrovend zijn, maar het biedt de mogelijkheid om land volledig in eigendom te hebben.",
+        "Wil je een freehold eigendom? Dan is een PMA noodzakelijk. Dit kost wat tijd, maar biedt wel de mogelijkheid om grond volledig op naam van je bedrijf te zetten.",
       icon: <BriefcaseBusiness className="w-5 h-5 text-sky" />,
     },
     {
       step: 6,
-      title: "Koop afronden bij de notaris",
+      title: "Rond de aankoop af bij de notaris",
       description:
-        "Bij de aankoop van vastgoed in Indonesië is het verplicht om de transactie af te ronden bij een notaris. De notaris zorgt ervoor dat alle documenten correct worden geregistreerd.",
+        "Elke vastgoedtransactie in Indonesië wordt officieel vastgelegd bij een notaris. Deze zorgt ervoor dat alle documenten correct worden geregistreerd.",
       icon: <Handshake className="w-5 h-5 text-sky" />,
     },
     {
       step: 7,
-      title: "Betaling en bijkomende kosten",
+      title: "Voer de betaling uit",
       description:
-        " Zodra de notariële akte is ondertekend, betaal je de koopprijs en eventuele extra kosten, zoals notariskosten en belastingen.",
+        "Na het ondertekenen betaal je de koopsom en eventuele bijkomende kosten, zoals notariskosten en belastingen.",
       icon: <HandCoins className="w-5 h-5 text-sky" />,
     },
     {
       step: 8,
       title: "Registratie bij het Kadaster",
       description:
-        "Nadat de transactie is voltooid, moet je het eigendom registreren bij het Indonesische kadaster, zodat het officieel op jouw naam staat.",
+        "Tot slot wordt het eigendom geregistreerd bij het Indonesische kadaster, zodat het officieel op jouw naam staat.",
       icon: <NotebookPen className="w-5 h-5 text-sky" />,
     },
     {
       step: 9,
-      title: "Property management door ons",
+      title: "Laat het property management aan ons over",
       description:
-        "Van dagelijks onderhoud tot vijfsterren-gastenzorg: ons ervaren lokale team zorgt ervoor dat jouw villa in topconditie blijft, verhuurd wordt tegen de best mogelijke tarieven en elke gast een vlekkeloze ervaring beleeft.",
+        "Ons lokale team verzorgt alles: van dagelijks onderhoud tot gastbeleving op vijfsterrenniveau. Zo blijft je villa in topconditie en behaal je de beste verhuurresultaten.",
       icon: <KeySquare className="w-5 h-5 text-sky" />,
     },
   ];
@@ -86,15 +86,18 @@ export const Steps = () => {
     <section className="relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full px-4 flex flex-col gap-6 ">
         <Badge variant="muted">Stappenplan</Badge>
+        <div className="flex flex-col w-full md:max-w-3xl lg:max-w-6xl gap-6">
+          <h3 className="text-4xl lg:text-5xl font-light tracking-tight">
+            Stappenplan voor de aankoop van een{" "}
+            <span className="text-sky font-medium">huis of villa</span> in
+            Lombok.
+          </h3>
 
-        <h3 className="text-4xl lg:text-5xl font-light tracking-tight">
-          Aankoop van een{" "}
-          <span className="text-sky font-medium">huis of villa</span> in Lombok
-        </h3>
-
-        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
-          Volg deze stappen om een veilig en soepel aankoopproces te doorlopen.
-        </p>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
+            Volg deze stappen om een veilig en soepel aankoopproces te
+            doorlopen.
+          </p>
+        </div>
 
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
           {samodules.map((item) => (
@@ -118,17 +121,21 @@ const SAModule = ({
   icon: React.ReactNode;
 }) => {
   return (
-    <div className="relative border border-border p-5 bg-secondary/40 hover:bg-secondary transition-colors overflow-hidden">
-      {/* Huge faint step number */}
-      <span className="absolute top-2 right-3 text-5xl font-bold text-primary/10 select-none">
+    <div className="relative rounded-sm border border-border p-4 pt-4 bg-muted/60 hover:bg-secondary transition-colors overflow-hidden">
+      {/* Step number */}
+      <span className="absolute top-2 right-3 text-5xl font-bold text-nature/30 select-none">
         {step}
       </span>
 
-      <div className="flex items-center gap-2 relative z-10">
-        {icon}
-        <h4 className="text-base font-semibold">{title}</h4>
-      </div>
+      {/* Icon absolute top-left */}
+      <div className="absolute top-2 left-2 text-sky">{icon}</div>
 
+      {/* Title */}
+      <h4 className="text-base font-semibold uppercase relative z-10 pl-4">
+        {title}
+      </h4>
+
+      {/* Description */}
       <p className="text-sm text-muted-foreground leading-relaxed mt-3 relative z-10">
         {description}
       </p>

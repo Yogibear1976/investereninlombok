@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/headers/page-header";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
 import { Steps } from "@/components/sections/diensten/steps";
+import { TwoImagesShort } from "@/components/sections/over-ons/two-images-short";
+import InvestorNote from "@/components/sections/diensten/investor-note";
 
 export const metadata: Metadata = {
   title: {
@@ -65,6 +67,11 @@ export default function Diensten() {
           title="Persoonlijke begeleiding voor uw vastgoed in Indonesië."
         />
         <Steps />
+        <InvestorNote />
+        <TwoImagesShort
+          imgA={{ src: "/two-images/test_1.jpg", alt: "Voorzijde villa" }}
+          imgB={{ src: "/two-images/test_2.jpg", alt: "Zwembad en tuin" }}
+        />
       </main>
     </div>
   );
