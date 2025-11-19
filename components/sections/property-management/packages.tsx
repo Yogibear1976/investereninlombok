@@ -19,83 +19,122 @@ export const Packages = () => {
         </p>
 
         <div className="py-20">
-          <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
-            {/* Package 1 */}
-            <div className="border border-border rounded-2xl p-8 flex flex-col gap-5 hover:shadow-md transition bg-white">
-              {/* Header line */}
-              <div className="border-t border-sky/30 w-12 mb-2"></div>
+          <section className="w-full py-16">
+            <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4">
+              {/* <!-- PACKAGE 1 — BASIC --> */}
+              <div className="border border-border bg-white p-8 rounded-2xl flex flex-col gap-5 hover:shadow-md transition">
+                <div className="border-t border-sky/30 w-12 mb-2"></div>
 
-              <h3 className="text-base font-semibold tracking-wider uppercase">
-                Maintenance Package
-              </h3>
+                <h3 className="text-base font-semibold tracking-wider uppercase">
+                  Maintenance Package
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Perfect for owners who need essential upkeep and structured
+                  support.
+                </p>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Perfect voor eigenaren die basiszorg en periodiek beheer wensen.
-              </p>
+                <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                  <li>• Monthly maintenance</li>
+                  <li>• Standard reporting</li>
+                  <li>• Daytime support</li>
+                </ul>
 
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                <li>• Maandelijks onderhoud</li>
-                <li>• Standaard rapportages</li>
-                <li>• Overdag support</li>
-              </ul>
+                <div className="mt-6">
+                  <p className="text-xs text-muted-foreground uppercase">
+                    from
+                  </p>
+                  <p className="text-2xl font-semibold tracking-tight">
+                    IDR 1.200.000
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">/ month</p>
+                </div>
+              </div>
 
-              <p className="text-2xl font-semibold tracking-tight mt-6">
-                €99 / maand
-              </p>
+              {/* <!-- PACKAGE 2 — MOST POPULAR --> */}
+              <div className="relative border border-primary bg-secondary p-8 rounded-2xl flex flex-col gap-5 shadow-md transition">
+                <span className="absolute -top-3 left-4 bg-primary text-white text-[11px] px-3 py-1 rounded-md tracking-wide font-medium shadow-sm">
+                  MOST POPULAR
+                </span>
+
+                <div className="border-t border-primary w-12 mb-2"></div>
+
+                <h3 className="text-base font-semibold tracking-wider uppercase">
+                  Full Package
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Complete management for owners renting their villa short-term.
+                </p>
+
+                <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                  <li>• All Maintenance Services</li>
+                  <li>• Professional listing creation</li>
+                  <li>• Multi-platform sync</li>
+                  <li>• Dynamic pricing management</li>
+                  <li>• 24/7 guest communication</li>
+                  <li>• Check-in/out coordination</li>
+                </ul>
+
+                <div className="mt-6">
+                  <p className="text-xs text-muted-foreground uppercase">
+                    from
+                  </p>
+                  <p className="text-2xl font-semibold tracking-tight">
+                    IDR 3.200.000
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">/ month</p>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-border">
+                  <h4 className="text-sm font-semibold uppercase mb-1">
+                    Management Fees
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    14% of rental income
+                  </p>
+
+                  <h4 className="text-sm font-semibold uppercase mt-4 mb-1">
+                    Performance Bonuses
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    • Occupancy &gt; 70%: +2% commission
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • Occupancy &gt; 85%: +4% commission
+                  </p>
+                </div>
+              </div>
+
+              {/* <!-- PACKAGE 3 — PREMIUM --> */}
+              <div className="border border-border bg-white p-8 rounded-2xl flex flex-col gap-5 hover:shadow-md transition">
+                <div className="border-t border-sky/30 w-12 mb-2"></div>
+
+                <h3 className="text-base font-semibold tracking-wider uppercase">
+                  Premium Package
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Tailored for luxury villas demanding top-tier service and
+                  maximum ROI.
+                </p>
+
+                <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+                  <li>• Premium guest experience</li>
+                  <li>• Advanced revenue management</li>
+                  <li>• Weekly in-person inspections</li>
+                  <li>• Dedicated villa manager</li>
+                </ul>
+
+                <div className="mt-6">
+                  <p className="text-xs text-muted-foreground uppercase">
+                    from
+                  </p>
+                  <p className="text-2xl font-semibold tracking-tight">
+                    IDR 5.500.000
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">/ month</p>
+                </div>
+              </div>
             </div>
-
-            {/* Package 2 — Highlighted */}
-            <div className="relative border border-primary rounded-2xl p-8 flex flex-col gap-5 shadow-md bg-secondary">
-              {/* Badge */}
-              <span className="absolute -top-3 left-4 bg-primary text-white text-[11px] px-3 py-1 rounded-md tracking-wide font-medium shadow-sm">
-                MOST POPULAR
-              </span>
-
-              <div className="border-t border-primary w-12 mb-2"></div>
-
-              <h3 className="text-base font-semibold tracking-wider uppercase">
-                Full Package
-              </h3>
-
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Compleet beheer voor hoge bezetting en zorgeloze verhuur.
-              </p>
-
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                <li>• Volledig property management</li>
-                <li>• Marketing & boekingen</li>
-                <li>• 24/7 support</li>
-              </ul>
-
-              <p className="text-2xl font-semibold tracking-tight mt-6">
-                €199 / maand
-              </p>
-            </div>
-
-            {/* Package 3 */}
-            <div className="border border-border rounded-2xl p-8 flex flex-col gap-5 hover:shadow-md transition bg-white">
-              <div className="border-t border-sky/30 w-12 mb-2"></div>
-
-              <h3 className="text-base font-semibold tracking-wider uppercase">
-                Premium Package
-              </h3>
-
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Voor high-end villa’s die maximale kwaliteit en rendement
-                vereisen.
-              </p>
-
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                <li>• Premium guest experience</li>
-                <li>• Dynamische prijsstrategie</li>
-                <li>• Wekelijkse inspecties</li>
-              </ul>
-
-              <p className="text-2xl font-semibold tracking-tight mt-6">
-                €299 / maand
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
 
         {/* <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">

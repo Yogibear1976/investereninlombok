@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PropertyCardLarge } from "@/components/cards/property-card-large";
 import { Property } from "@prisma/client";
-import { useTheme } from "next-themes";
 
 const PROPERTY_TYPES = ["off-plan", "in-aanbouw", "bestaand", "land"];
 
@@ -21,11 +20,9 @@ export const OfferingSection = ({ properties }: OfferingSectionProps) => {
     (property) => property.type === selectedType
   );
 
-  const { theme } = useTheme();
-
   return (
     <section className="w-full pt-6">
-      <div className="w-full max-w-[1952px] mx-auto px-4">
+      <div className="w-full max-w-7xl mx-auto px-4">
         {/* Filters + Link Row */}
         <div
           className="
@@ -34,7 +31,6 @@ export const OfferingSection = ({ properties }: OfferingSectionProps) => {
         sm:overflow-visible
       "
         >
-          {/* Filters */}
           <div className="flex gap-2 sm:gap-3 shrink-0">
             {PROPERTY_TYPES.map((type) => (
               <Button
@@ -53,7 +49,6 @@ export const OfferingSection = ({ properties }: OfferingSectionProps) => {
             ))}
           </div>
 
-          {/* Alle projecten aligned to flex-end */}
           <Link
             href="/aanbod"
             className="text-xs sm:text-sm whitespace-nowrap hover:underline ml-auto shrink-0"
@@ -62,7 +57,6 @@ export const OfferingSection = ({ properties }: OfferingSectionProps) => {
           </Link>
         </div>
 
-        {/* Grid */}
         <div className="mt-6">
           <div
             className="

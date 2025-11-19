@@ -39,6 +39,7 @@ export const PropertyCardSmall = ({ property }: PropertyCardSmallProps) => {
     description,
     ownership,
     area,
+    catchLine,
     bathrooms,
     euroPrice,
     indoPrice,
@@ -59,6 +60,10 @@ export const PropertyCardSmall = ({ property }: PropertyCardSmallProps) => {
             <span className="absolute top-2 z-20 bg-nature text-white text-[10px] font-medium px-2 py-0.5">
               {ownership}
             </span>
+            {/* Top-right label */}
+            <span className="absolute top-2 right-0 z-20 bg-azure text-white uppercase text-[10px] font-medium px-2 py-0.5">
+              {catchLine}
+            </span>
             {images?.[0] ? (
               <Image
                 fill
@@ -71,6 +76,11 @@ export const PropertyCardSmall = ({ property }: PropertyCardSmallProps) => {
             ) : (
               <Skeleton className="aspect-video w-full h-full" />
             )}
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-50 z-30">
+              <span className="text-white text-sm font-normal uppercase tracking-wide px-4 py-2 bg-white/10 backdrop-blur-sm">
+                Bekijk investering
+              </span>
+            </div>
           </div>
 
           <div className="flex-1 flex-col">

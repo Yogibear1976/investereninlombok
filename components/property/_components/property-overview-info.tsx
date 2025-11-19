@@ -85,18 +85,18 @@ export const PropertyOverviewInfo = ({
 
             <li className="flex flex-col">
               <span className="text-sm text-muted-foreground uppercase">
-                Oppervlakte
+                Start verhuur
               </span>
-              <span className="text-sm font-normal">
-                70 m² binnen + 55 m² buiten
-              </span>
+              <span className="text-sm font-normal">Q2 2026</span>
             </li>
 
             <li className="flex flex-col">
               <span className="text-sm text-muted-foreground uppercase">
-                Prijs
+                Netto rendement (per jaar) uit verhuur na alle kosten
               </span>
-              <span className="text-sm font-normal">Vanaf €88.900</span>
+              <span className="text-sm font-normal">
+                13,3% netto ROI per jaar
+              </span>
             </li>
 
             <li className="flex flex-col sm:col-span-2">

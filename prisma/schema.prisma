@@ -74,6 +74,7 @@ model Property {
   yearCompleted   Int?
   returnRoi       String?
   payback         String?
+  catchLine       String?
   createdAt       DateTime   @default(now())
   updatedAt       DateTime   @updatedAt
 }
