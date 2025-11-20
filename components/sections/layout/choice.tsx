@@ -8,10 +8,10 @@ import { useTheme } from "next-themes";
 
 const choiceCards = [
   {
-    choiceLink: "/investeren-in-projecten",
-    header: "Investeren",
+    choiceLink: "/collectief-investeren",
+    header: "Collectief investeren",
     description:
-      "Je zoekt een investering die rendement oplevert. Een woning die niet bedoeld is om zelf in te wonen, maar die wel geschikt is voor eigen gebruik tijdens vakanties.",
+      "Een laagdrempelige manier om mee te investeren in professioneel, hoogrendement vastgoed dat normaal alleen voor grotere investeerders toegankelijk is.",
     imageUrl: "/voorkeur/investeren-test.jpg",
   },
   {

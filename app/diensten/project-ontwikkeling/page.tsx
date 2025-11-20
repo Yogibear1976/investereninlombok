@@ -57,15 +57,20 @@ export default function ProjectOntwikkeling() {
           subject="Projectontwikkeling"
         />
         <h1>
-          Hier leg ik uit dat ik projecten start voor Nederlandse investeerders
-          die een huis of villa willen laten bouwen naar Europese
-          kwaliteitseisen. Ik begeleidt de bouw en juridische zaken op afstand
-          voor hen. Ik inspecteer de projecten en verzorg achteraf ook het
-          propertymanagement. Ook sluit ik meerdere investeerders aan
-          vastgoedprojecten die samen investeren in een gezamelijk bedrijf met
-          als doel om meerdere villa's te verhuren op eigen - gekochte - grond.
-          Gekochte grond, geen leaseconstructie, dus heel interessant.
+          Ik ontwikkel vastgoedprojecten voor Nederlandse investeerders die een
+          huis of villa willen laten bouwen volgens Europese
+          kwaliteitsstandaarden. Daarbij begeleid ik het volledige traject op
+          afstand: van bouwcoördinatie en voortgangsinspecties tot de juridische
+          afwikkeling en het uiteindelijke property management. Daarnaast breng
+          ik meerdere investeerders samen in gezamenlijke vastgoedprojecten,
+          waarbij zij participeren in één onderneming met als doel meerdere
+          1-bedroom poolvilla’s te realiseren en te verhuren op eigen grond —
+          dus geen leaseconstructies. Dit maakt het zowel veiliger als
+          aantrekkelijker. De keuze voor 1-bedroom studio’s is bewust: gezien de
+          huidige demografische en geografische ontwikkelingen zijn dit op dit
+          moment de meest gevraagde en rendabele huureenheden in Lombok.
         </h1>
+        <h2>Have a look at Sarangan, close to Selong belanak.</h2>
       </main>
     </div>
   );

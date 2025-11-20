@@ -42,7 +42,7 @@ export const PropertyOverviewInfo = ({
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 items-start max-w-7xl mx-auto">
         {/* Left section */}
         <div className="flex flex-col gap-6">
-          <h2 className="text-4xl font-light tracking-tight">
+          <h2 className="text-4xl font-normal tracking-tight">
             Vastgoedinformatie
           </h2>
           <p className="leading-relaxed">{propertyOverview}</p>
@@ -113,7 +113,7 @@ export const PropertyOverviewInfo = ({
 
         {/* Right section */}
         <div className="w-full mx-auto">
-          <aside className="hidden md:block sticky top-6 bg-muted/40 p-6 w-full">
+          <aside className="hidden md:block sticky top-6 bg-muted/40 p-6 w-full h-fit">
             {/* Price */}
             <div className="flex flex-col gap-1">
               <span className="text-3xl font-normal text-primary uppercase">
@@ -132,9 +132,7 @@ export const PropertyOverviewInfo = ({
                 </p>
               </div>
             </div>
-
             <div className="h-px bg-muted my-4"></div>
-
             {/* Overview */}
             <div className="flex flex-col gap-4">
               <span className="text-xl font-light uppercase tracking-tight">
@@ -157,9 +155,7 @@ export const PropertyOverviewInfo = ({
                 </div>
               ))}
             </div>
-
             <div className="h-px bg-muted my-4"></div>
-
             {/* Contact Agent */}
             <div className="flex flex-col gap-4">
               <span className="text-xl font-light uppercase tracking-tight">

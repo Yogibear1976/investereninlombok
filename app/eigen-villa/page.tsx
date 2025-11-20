@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/headers/page-header";
+import { OneImageStretched } from "@/components/images/one-image-stretched";
 
 export const metadata: Metadata = {
   title: {
@@ -55,6 +56,12 @@ export default function OwnVilla() {
           title="Eigen villa laten bouwen"
           subheader="Je wilt een eigen villa laten bouwen op Lombok, volledig naar jouw wensen. Wanneer je er zelf niet verblijft, wil je de woning graag verhuren om zo een aantrekkelijk rendement te behalen."
           subject=""
+        />
+        <OneImageStretched
+          img={{
+            src: "/one-image-stretched/test-1.jpg",
+            alt: "Voorzijde villa",
+          }}
         />
         <div>
           <div className="my-6">

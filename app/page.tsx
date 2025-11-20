@@ -3,7 +3,8 @@ import { HeroSection } from "@/components/sections/landingpage/hero";
 import { MarqueeServices } from "@/components/sections/landingpage/marquee-services";
 import { OfferingSection } from "@/components/sections/landingpage/offering";
 import { Updates } from "@/components/sections/landingpage/updates";
-import { TwoSquareImages } from "@/components/sections/landingpage/two-images";
+import { TwoSquareImages } from "@/components/images/two-images";
+
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 

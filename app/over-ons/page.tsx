@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/headers/page-header";
 import { Faqs } from "@/components/sections/over-ons/faqs";
 import { HighLights } from "@/components/sections/over-ons/highlights";
 import { About } from "@/components/sections/over-ons/about";
-import { TwoImagesShort } from "@/components/sections/over-ons/two-images-short";
+import { TwoImagesShort } from "@/components/images/two-images-short";
 
 export const metadata: Metadata = {
   title: {

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/headers/page-header";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
 import { Steps } from "@/components/sections/diensten/steps";
-import { TwoImagesShort } from "@/components/sections/over-ons/two-images-short";
+import { TwoImagesShort } from "@/components/images/two-images-short";
 import InvestorNote from "@/components/sections/diensten/investor-note";
 
 export const metadata: Metadata = {
