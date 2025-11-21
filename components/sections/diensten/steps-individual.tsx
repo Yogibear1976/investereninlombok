@@ -15,7 +15,7 @@ import {
   BriefcaseBusiness,
 } from "lucide-react";
 
-export const Steps = () => {
+export const StepsIndividual = () => {
   const samodules = [
     {
       step: 1,
@@ -83,19 +83,19 @@ export const Steps = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden pt-8">
       <div className="max-w-7xl mx-auto w-full px-4 flex flex-col gap-6 ">
-        <Badge variant="muted">Stappenplan</Badge>
+        <Badge variant="muted">Stappenplan Individueel</Badge>
         <div className="flex flex-col w-full md:max-w-3xl lg:max-w-6xl gap-6">
           <h3 className="text-4xl lg:text-5xl font-light tracking-tight">
-            Stappenplan voor de aankoop van een{" "}
-            <span className="text-sky font-medium">huis of villa</span> in
-            Lombok.
+            Stappenplan voor{" "}
+            <span className="text-sky font-medium">individueel</span> vastgoed
+            aankopen in Lombok.
           </h3>
 
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
-            Volg deze stappen om een veilig en soepel aankoopproces te
-            doorlopen.
+            Volg deze stappen met mij om een veilig en soepel aankoopproces te
+            doorlopen:
           </p>
         </div>
 
@@ -121,9 +121,9 @@ const SAModule = ({
   icon: React.ReactNode;
 }) => {
   return (
-    <div className="relative rounded-sm border border-border p-4 pt-4 bg-muted/60 hover:bg-secondary transition-colors overflow-hidden">
+    <div className="relative border border-border p-4 pt-4 bg-muted/60 hover:bg-secondary transition-colors overflow-hidden">
       {/* Step number */}
-      <span className="absolute top-2 right-3 text-5xl font-bold text-nature/30 select-none">
+      <span className="absolute top-2 right-3 text-5xl font-bold text-sky/30 select-none">
         {step}
       </span>
 

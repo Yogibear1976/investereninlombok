@@ -26,7 +26,7 @@ const choiceCards = [
     header: "Vastgoed Management",
     description:
       "Of je nu een luxe villa of een tweede huis bezit in Lombok, onze flexibele managementpakketten dekken alles: van onderhoud en personeel tot gastservices en opbrengstoptimalisatie.",
-    imageUrl: "/voorkeur/test.jpg",
+    imageUrl: "/voorkeur/propertymanagement.jpg",
   },
 ];
 

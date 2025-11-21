@@ -61,7 +61,7 @@ export default function PropertyManagement() {
         <PageSubHeader
           smallTitleTop="Packages"
           iconName="Handshake"
-          title="Wij beheren niet alleen villa's. Wij helpen eigenaren om duurzame waarde op te bouwen met betere boekingen, lokale ondersteuning en zorgvuldig vastgoedbeheer dat je investering beschermt."
+          title="Samen ontwikkelen we niet alleen villa's en huizen. Wij helpen je ook om duurzame waarde op te bouwen met betere boekingen, lokale ondersteuning en zorgvuldig vastgoedbeheer dat je investering beschermt."
         />
         <Packages />
         <h1>

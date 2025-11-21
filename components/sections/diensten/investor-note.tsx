@@ -2,13 +2,13 @@
 import React from "react";
 import { Info } from "lucide-react";
 
-export default function InvestorNote() {
+export const InvestorNote = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 py-4 sm:py-8 md:py-10">
         <div className="flex items-start gap-1">
           <div className="shrink-0 mt-0.5">
-            <Info className="w-4 h-4 text-nature" />
+            <Info className="w-4 h-4 text-warning" />
           </div>
           <div className="text-xs sm:text-sm">
             <p className="font-normal leading-relaxed">
@@ -25,4 +25,4 @@ export default function InvestorNote() {
       </div>
     </section>
   );
-}
+};

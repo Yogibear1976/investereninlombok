@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 import { PageHeader } from "@/components/headers/page-header";
-import { PageSubHeader } from "@/components/headers/page-sub-header";
-import { Steps } from "@/components/sections/diensten/steps";
+import { StepsCollective } from "@/components/sections/diensten/steps-collective";
+import { StepsIndividual } from "@/components/sections/diensten/steps-individual";
 import { TwoImagesShort } from "@/components/images/two-images-short";
-import InvestorNote from "@/components/sections/diensten/investor-note";
+import { InvestorNote } from "@/components/sections/diensten/investor-note";
 
 export const metadata: Metadata = {
   title: {
@@ -58,20 +58,16 @@ export default function Diensten() {
       <main>
         <PageHeader
           title="Diensten"
-          subheader="Investeren in Lombok is een lokaal makelaarskantoor in Kuta. Wij ondersteunen grondeigenaren, investeerders en kopers bij het aankopen, beveiligen en beheren van vastgoed in Zuid-Lombok."
+          subheader="Investeren in Lombok biedt deskundig advies en directe begeleiding bij de realisatie van investeringsprojecten in Zuid-Lombok. Wij ondersteunen grondeigenaren, investeerders en kopers bij het aankopen, beveiligen en beheren van vastgoed."
           subject=""
         />
-        <PageSubHeader
-          smallTitleTop="Diensten"
-          iconName="Handshake"
-          title="Persoonlijke begeleiding voor uw vastgoed in Indonesië."
-        />
-        <Steps />
+        <StepsCollective />
         <InvestorNote />
         <TwoImagesShort
           imgA={{ src: "/two-images/test_1.jpg", alt: "Voorzijde villa" }}
           imgB={{ src: "/two-images/test_3.jpg", alt: "Zwembad en tuin" }}
         />
+        <StepsIndividual />
       </main>
     </div>
   );
