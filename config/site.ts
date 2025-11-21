@@ -11,7 +11,8 @@ export const siteConfig = {
     instagram: "https://www.linkedin.com/company/linkbits/",
     facebook: "https://www.facebook.com/people/Linkbitsio/61550345804634/",
     youtube: "https://www.youtube.com/@investereninlombok",
-    linkedin: "https://www.linkedin.com/company/linkbits/",
+    linkedin:
+      "https://www.linkedin.com/company/investereninlombok-nl/?viewAsMember=true",
   },
 };
 

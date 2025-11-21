@@ -8,16 +8,18 @@ import { ModalAppointment } from "@/components/modals/modal-appointment";
 
 export const CallToAction = () => {
   return (
-    <section className="bg-azure py-16 px-4 justify-items-center">
+    <section className="bg-[radial-gradient(145.05%_100%_at_50%_0%,#1D2B41_0%,#020509_57.38%,#0F1A29_88.16%)] py-16 px-4 justify-items-center">
       <div className="container lg:grid lg:grid-cols-2 text-center lg:text-left place-items-center">
         <div className="lg:col-start-1">
-          <h3 className="font-medium text-white tracking-tighter leading-4xl lg:leading-5xl lg:text-5xl text-4xl ">
+          <h3 className="font-light text-white tracking-tighter leading-4xl lg:leading-5xl lg:text-5xl text-4xl ">
             Ben je klaar om met vertrouwen en de juiste kennis beslissingen te
-            nemen op de vastgoedmarkt van Zuid-Lombok?
+            nemen op de vastgoedmarkt van{" "}
+            <span className="font-medium text-sky">Zuid-Lombok</span>,
+            Indonesië?
           </h3>
           <p className="font-normal leading-tight text-gray-300 text-xl mt-4 mb-8 lg:mb-0">
-            Neem vandaag nog contact met ons op voor een vrijblijvend gesprek en
-            zet de eerste stap richting het realiseren van jouw vastgoedplannen.
+            Wil je meer weten? Neem vandaag vrijblijvend contact met me op en ik
+            vertel je graag hoe we samen jouw vastgoedplannen kunnen vormgeven.
           </p>
         </div>
 

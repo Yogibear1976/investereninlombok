@@ -23,7 +23,7 @@ const people = [
   {
     id: 1,
     name: "Jochgem van Delft",
-    designation: "Account Executive",
+    designation: "Founder & Projectontwikkeling",
     image: "/avatars/portrait_2.jpg",
   },
   // {
@@ -40,37 +40,37 @@ export const HighLights = () => {
       id: "1",
       highlight: "Passie.",
       icon: Star,
-      desc: "Ik ben gepassioneerd over wat ik doe en pusht me om verwachtingen te overtreffen, stimuleert mijn creativiteit en inspireert me om mijn beste werk te leveren.",
+      desc: "Mijn passie voor Indonesisch vastgoed drijft me om projecten te selecteren met bewezen potentie. Ik zet me volledig in om investeerders te helpen slimme, winstgevende en veilig opgebouwde keuzes te maken.",
     },
     {
       id: "2",
       highlight: "Eerlijkheid.",
       icon: HeartHandshake,
-      desc: "Ik ben open en eerlijk in mijn feedback en communicatie. Dit schept vertrouwen en respect, waardoor we effectief kunnen samenwerken en onze gezamenlijke doelen kunnen bereiken.",
+      desc: "Je krijgt bij mij altijd een eerlijk en realistisch advies, inclusief risico's, kansen en rendementsverwachtingen. Zo kun jij met vertrouwen investeren, wetende dat je op transparante informatie bouwt.",
     },
     {
       id: "3",
       highlight: "Verantwoordelijkheid.",
       icon: ShieldCheck,
-      desc: "Ik neem verantwoordelijkheid voor mijn werk en mijn acties en ik houd mezelf verantwoordelijk voor het leveren van resultaten van hoge kwaliteit voor je organisatie.",
+      desc: "Ik begeleid jouw investering alsof het mijn eigen vermogen is. Van due diligence tot structuurkeuze en lokale regelgeving: ik draag verantwoordelijkheid voor een veilige en zorgvuldige aanpak.",
     },
     {
       id: "4",
       highlight: "Transparantie.",
       icon: Blend,
-      desc: "Ik zeg wat ik bedoel en bedoel wat ik zeg! Feedback wordt constructief gegeven en open ontvangen, en de lijnen staan altijd wagenwijd open als je gehoord wilt worden.",
+      desc: "Bij internationale investeringen is helderheid cruciaal. Daarom krijg je volledige inzage in cijfers, contracten, juridische structuren en rendementen. Geen verrassingen, alleen duidelijkheid.",
     },
     {
       id: "5",
       highlight: "Toewijding.",
       icon: Award,
-      desc: "Hard werken, hoge normen en toewijding vormen de laatste ingrediënten van het geheime recept voor mijn uiteindelijke doel: een uitstekend product en een uitstekende klantenservice.",
+      desc: "Ik sta investeerders persoonlijk bij gedurende het hele traject: van eerste kennismaking tot aankoop, exploitatie en verkoop. Mijn doel is jou begeleiden naar een zorgeloze, winstgevende investering.",
     },
     {
       id: "6",
       highlight: "Duurzaamheid.",
       icon: Leaf,
-      desc: "Met Linkbits ben ik bewust bezig met de toekomst. Ik werk remote om woon-werk verkeer uit te sluiten en CO2 uitstoot drastisch te verminderen.",
+      desc: "Ik werk samen met ontwikkelaars die verantwoord bouwen en investeren in duurzame projecten, lokale werkgelegenheid en lange-termijn leefbaarheid. Zo profiteer jij van rendement én toekomstbestendigheid.",
     },
   ];
 
@@ -81,7 +81,8 @@ export const HighLights = () => {
           <AnimatedTooltip items={people} />
           <div className="md:max-w-2xl md:text-center">
             <h3 className="font-light tracking-tight text-4xl lg:text-5xl">
-              Samen creëren we bewustzijn en draagvlak onder medewerkers
+              Jouw investering verdient zekerheid, toewijding en volledige
+              duidelijkheid.
             </h3>
           </div>
         </div>

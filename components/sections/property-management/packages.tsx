@@ -18,7 +18,7 @@ export const Packages = () => {
           verzorgen.
         </p>
 
-        <div className="py-20">
+        <div className="py-20 bg-[radial-gradient(145.05%_100%_at_50%_0%,#1D2B41_0%,#020509_57.38%,#0F1A29_88.16%)]">
           <section className="w-full py-16">
             <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 px-4">
               {/* <!-- PACKAGE 1 — BASIC --> */}

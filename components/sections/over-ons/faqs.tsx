@@ -29,22 +29,16 @@ const FAQList: FAQProps[] = [
   },
   {
     question:
-      "Ik hoor verhalen over de stabiliteit in Thailand. Is het het wel verstandig om daar lange tijd te verblijven?",
+      "Ik hoor soms verhalen over de stabiliteit in Indonesië. Is het het wel verstandig om daar lange tijd te verblijven en te investeren?",
     answer:
-      "Thailand is land die de laatste jaren en nog steeds een enorme ontwikkeling doormaakt. Een land en bevolking met enorm veel energie en dynamiek. Er wordt een hoop gesuggereerd, maar zoek de juiste informatie. Onderzoek of alles klopt wat je leest, aangezien er veel door emotie gekleurde info te vinden is op het internet. ",
+      "Indonesië is een land dat de afgelopen jaren een sterke en stabiele economische groei laat zien. De overheid investeert veel in infrastructuur, toerisme en internationale veiligheid. Natuurlijk gaat er online veel informatie rond, maar het is belangrijk om betrouwbare bronnen te raadplegen. Veel berichten zijn gebaseerd op emotie of verouderde situaties. Wie zich verdiept in de feiten ziet dat Indonesië, en vooral eilanden zoals Lombok en Bali, veilig en aantrekkelijk zijn voor langdurig verblijf én investering.",
     value: "item-3",
   },
   {
-    question: "Waar is je bedrijf geregistreerd?",
+    question: "Kan je als Nederlander vastgoed bezitten op Lombok?",
     answer:
-      "Mijn bedrijf is geregistreerd in Nederland, maar ik beheer mijn activiteiten remote vanuit Zuidoost-Azië of Nederland. dit brengt mij heel dichtbij of in direct contact met mijn connecties hier in Thailand. Ook om dicht in de buurt van de connecties te opereren in dezelfde tijdzone, zodat ik gemakkelijker alle administratieve en informatie vergaring voor je kan uitvoeren.",
+      "Veel investeerders vragen zich af of buitenlanders vastgoed kunnen bezitten op Lombok. Dat kan, maar onder specifieke voorwaarden. In de praktijk zijn er twee opties: leasehold (langdurige erfpacht) of freehold via een Indonesische PMA-PT (mijn aanbevolen structuur). Daarnaast kun je collectief investeren in een speciaal opgerichte PT waarin jij aandeelhouder wordt. Vanuit deze structuur worden zowel de projectontwikkeling als het verhuurmanagement professioneel georganiseerd.",
     value: "item-4",
-  },
-  {
-    question: "Wat maakt werken met mij aantrekkelijk?",
-    answer:
-      "Ik bied je startup of gevestigde onderneming een goedkope oplossing om je bedrijf met HubSpot de juiste tractie te laten opbouwen in de markt. Daarnaast hanteren we een transparante workflow en snelle time-to-market oplossingen. Naast het feit dat we rekening houden met je zakelijke uitdagingen en in een zeer korte tijd geautomatiseerde oplossingen produceren is ons grootste concurrentievoordeel onze hoge technische expertise (senior en expert niveau).",
-    value: "item-5",
   },
 ];
 
@@ -58,11 +52,11 @@ export const Faqs = () => {
           beantwoord
         </h2>
         <h3 className="text-lg sm:text-xl text-muted-foreground mt-4 mb-12">
-          Of je nu als particulier of als bedrijf wilt investeren in verhuur, of
-          juist in de aankoop en verkoop van vastgoed, Lombok biedt unieke
-          kansen die het eiland bijzonder aantrekkelijk maken voor buitenlandse
-          investeerders. Hieronder vind je antwoorden op de meest voorkomende
-          vragen.
+          Of je nu als particulier, collectief of bedrijf wilt deelnemen aan een
+          projectontwikkeling, van verhuurconcept tot aankoop en verkoop van
+          nieuw vastgoed, Lombok biedt unieke kansen die het eiland bijzonder
+          aantrekkelijk maken voor buitenlandse investeerders. Hieronder vind je
+          antwoorden op de meest voorkomende vragen.
         </h3>
         <div className="text-left">
           <Accordion type="single" collapsible className="w-full">
