@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/headers/page-header";
 import { Faqs } from "@/components/sections/over-ons/faqs";
 import { HighLights } from "@/components/sections/over-ons/highlights";
+import { Reviews } from "@/components/sections/over-ons/reviews";
 import { About } from "@/components/sections/over-ons/about";
 import { TwoImagesShort } from "@/components/images/two-images-short";
 
@@ -62,6 +63,7 @@ export default function OverOns() {
         />
         <About />
         <HighLights />
+        <Reviews />
         <TwoImagesShort
           imgA={{ src: "", alt: "Voorzijde villa" }}
           imgB={{ src: "", alt: "Zwembad en tuin" }}

@@ -25,7 +25,7 @@ const updateCards = [
     date: "2025-02-03T16:17:59.165+00:00",
     header: "Eale Villas",
     slug: "test",
-    desc: "De bouw van de nieuwe villa’s in fase 2 is gestart — de funderingen zijn inmiddels gelegd en de eerste muren verrijzen.",
+    desc: "De bouw van de nieuwe villa's in fase 2 is gestart — de funderingen zijn inmiddels gelegd en de eerste muren verrijzen.",
     imageUrl: "/cards/large-card.jpg",
   },
   {
