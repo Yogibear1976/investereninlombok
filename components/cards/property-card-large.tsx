@@ -25,12 +25,12 @@ export const PropertyCardLarge = ({ property }: PropertyCardLargeProps) => {
     ownership,
     indoPrice,
     livingArea,
+    landArea,
     bedrooms,
     images,
   } = property;
-  // const [imgSrc, setImgSrc] = useState(
-  //   property.images[0] || "/placeholder.jpg"
-  // );
+
+  const area = landArea ?? 0;
 
   return (
     <Link
@@ -85,16 +85,27 @@ export const PropertyCardLarge = ({ property }: PropertyCardLargeProps) => {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-between w-full">
+              <div className="flex items-center justify-between w-full gap-4">
                 <p className="md:leading-tight uppercase font-semibold group-hover:text-muted-foreground group-hover:cursor-pointer transition line-clamp-1">
                   {name}
                 </p>
-                <p className="font-bold">{formatEuroPrice(euroPrice)}</p>
+                <p className="font-bold whitespace-nowrap">
+                  {formatEuroPrice(euroPrice)}
+                </p>
               </div>
 
               <p className="text-sm font-normal text-muted-foreground uppercase">
-                {livingArea} m<sup className="font-features sups">2</sup> -{" "}
-                {bedrooms} slaapkamers
+                {type === "land" ? (
+                  <>
+                    {area} m<sup className="font-features sups">2</sup> ≈{" "}
+                    {(area / 100).toFixed(0)} are
+                  </>
+                ) : (
+                  <>
+                    {livingArea} m<sup className="font-features sups">2</sup> –{" "}
+                    {bedrooms} slaapkamers
+                  </>
+                )}
               </p>
             </div>
           </div>

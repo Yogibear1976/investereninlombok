@@ -21,6 +21,9 @@ export const PropertyDetailsHero = ({ property }: PropertyDetailsHeroProps) => {
     euroPrice,
     images,
   } = property;
+
+  const area = landArea ?? 0;
+
   return (
     <div className="relative flex flex-col items-start gap-8 md:gap-14 w-full scroll-mt-5">
       <div className="flex flex-col items-start gap-2 w-full overflow-hidden">
@@ -48,7 +51,10 @@ export const PropertyDetailsHero = ({ property }: PropertyDetailsHeroProps) => {
               Grondoppervlak
             </p>
             <p className="text-xl sm:text-2xl lg:text-3xl font-normal uppercase">
-              {formatArea(landArea)} m²
+              {formatArea(area)} m²{" "}
+              <span className="text-base sm:text-lg lg:text-xl text-muted-foreground">
+                / {(area / 100).toFixed(2)} are
+              </span>
             </p>
           </div>
         </div>
