@@ -37,6 +37,9 @@ export const PropertyOverviewInfo = ({
     features,
     indoPrice,
   } = property;
+
+  const formatToNvt = (v: number | null) => (v === 0 ? "n.v.t." : `${v} m²`);
+  const formatToNvtYear = (v: number | null) => (v === 0 ? "n.v.t." : `${v}`);
   return (
     <section className="w-full py-16">
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 items-start max-w-7xl mx-auto">
@@ -142,8 +145,8 @@ export const PropertyOverviewInfo = ({
               {[
                 { label: "Objectcode", value: "code" },
                 { label: "Eigendom", value: ownership },
-                { label: "Bouwjaar", value: yearCompleted },
-                { label: "Woonoppervlak", value: `${livingArea} m²` },
+                { label: "Bouwjaar", value: formatToNvtYear(yearCompleted) },
+                { label: "Woonoppervlak", value: formatToNvt(livingArea) },
                 { label: "Perceel", value: `${formatArea(landArea)} m²` },
                 { label: "Status", value: type },
               ].map((item, i) => (

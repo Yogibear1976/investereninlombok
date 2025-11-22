@@ -47,8 +47,8 @@ export const Updates = () => {
         {/* Header */}
         <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10">
           <div className="flex flex-row items-end justify-between w-full">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter">
-              Updates
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tighter">
+              Projectupdates
             </h2>
             <Link href="/updates">
               <p className="text-sm hover:underline cursor-pointer">

@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import { OneImageStretched } from "@/components/images/one-image-stretched";
 import { PageHeader } from "@/components/headers/page-header";
 import { PropertyCardSmall } from "@/components/cards/property-card-small";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
@@ -114,6 +114,12 @@ export default async function PropertiesPage() {
           title="Aanbod in Zuid-Lombok"
           subheader="Ideaal voor zowel particuliere als zakelijke investeerders die op zoek zijn naar rendement en zekerheid."
           subject=""
+        />
+        <OneImageStretched
+          img={{
+            src: "/one-image-stretched/test-1.jpg",
+            alt: "Voorzijde villa",
+          }}
         />
         <PageSubHeader
           smallTitleTop="Vastgoed"

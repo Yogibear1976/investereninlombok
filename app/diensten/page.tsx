@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { PageHeader } from "@/components/headers/page-header";
+import { OneImageStretched } from "@/components/images/one-image-stretched";
 import { StepsCollective } from "@/components/sections/diensten/steps-collective";
 import { StepsIndividual } from "@/components/sections/diensten/steps-individual";
 import { TwoImagesShort } from "@/components/images/two-images-short";
@@ -60,6 +61,12 @@ export default function Diensten() {
           title="Diensten"
           subheader="Investeren in Lombok biedt deskundig advies en directe begeleiding bij de realisatie van investeringsprojecten in Zuid-Lombok. Wij ondersteunen grondeigenaren, investeerders en kopers bij het aankopen, beveiligen en beheren van vastgoed."
           subject=""
+        />
+        <OneImageStretched
+          img={{
+            src: "/one-image-stretched/test-1.jpg",
+            alt: "Voorzijde villa",
+          }}
         />
         <StepsCollective />
         <InvestorNote />

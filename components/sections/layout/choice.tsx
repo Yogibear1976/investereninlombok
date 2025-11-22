@@ -39,7 +39,7 @@ export const Choice = () => {
         <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10">
           <div className="w-full">
             <div className="flex items-end justify-between">
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tighter">
                 Je voorkeur
               </h2>
             </div>

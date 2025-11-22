@@ -7,6 +7,7 @@ import Image from "next/image";
 import { PageHeader } from "@/components/headers/page-header";
 import { PropertyCardSmall } from "@/components/cards/property-card-small";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
+import { OneImageStretched } from "@/components/images/one-image-stretched";
 
 export const metadata: Metadata = {
   title: {
@@ -72,6 +73,12 @@ export default async function OffPlanPropertiesPage() {
           title="aanbod"
           subheader="Nog niet gebouwd, je investeert op tekening of in de planningsfase. Een goedkoper instapmoment."
           subject="Off-plan projecten"
+        />
+        <OneImageStretched
+          img={{
+            src: "/one-image-stretched/test-1.jpg",
+            alt: "Voorzijde villa",
+          }}
         />
         <PageSubHeader
           smallTitleTop="Geplande villas en projecten"

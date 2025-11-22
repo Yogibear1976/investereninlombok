@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import { OneImageStretched } from "@/components/images/one-image-stretched";
 import { PageHeader } from "@/components/headers/page-header";
 import { PropertyCardSmall } from "@/components/cards/property-card-small";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
@@ -72,6 +72,12 @@ export default async function UnderConstructionPropertiesPage() {
           title="aanbod"
           subheader="Objecten momenteel in ontwikkeling, de bouw is bezig. Oplevering meestal binnen 3 tot 12 maanden."
           subject="Vastgoed in aanbouw"
+        />
+        <OneImageStretched
+          img={{
+            src: "/one-image-stretched/test-1.jpg",
+            alt: "Voorzijde villa",
+          }}
         />
         <PageSubHeader
           smallTitleTop="Woningen in aanbouw"

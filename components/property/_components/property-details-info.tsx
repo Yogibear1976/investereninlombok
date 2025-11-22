@@ -27,6 +27,10 @@ export const PropertyDetailsInfo = ({ property }: PropertyDetailsInfoProps) => {
     features,
     indoPrice,
   } = property;
+
+  const formatToNvt = (v: number | null) => (v === 0 ? "n.v.t." : `${v} m²`);
+  const formatToNvtYear = (v: number | null) => (v === 0 ? "n.v.t." : `${v}`);
+
   return (
     <section className="w-full py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -54,11 +58,11 @@ export const PropertyDetailsInfo = ({ property }: PropertyDetailsInfoProps) => {
         <div className="w-full lg:max-w-lg mx-auto">
           {[
             { label: "Prijs IDR", value: formatIdrPrice(indoPrice) },
-            { label: "Woonoppervlak", value: `${livingArea} m²` },
-            { label: "Slaapkamers", value: bedrooms },
-            { label: "Badkamers", value: bathrooms },
+            { label: "Woonoppervlak", value: formatToNvt(livingArea) },
+            { label: "Slaapkamers", value: formatToNvt(bedrooms) },
+            { label: "Badkamers", value: formatToNvt(bathrooms) },
             { label: "Grondoppervlak", value: `${formatArea(landArea)} m²` },
-            { label: "Bouwjaar", value: yearCompleted },
+            { label: "Bouwjaar", value: formatToNvtYear(yearCompleted) },
             { label: "Voorzieningen", value: formatFeatures(features) },
             { label: "Netto ROI per jaar", value: returnRoi },
             { label: "Terugverdientijd", value: `${payback} jaar` },

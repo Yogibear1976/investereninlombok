@@ -59,16 +59,16 @@ export default function CollectiveInvestment() {
           subheader="Een laagdrempelige manier om mee te investeren in professioneel, hoogrendement vastgoed dat normaal alleen voor grotere investeerders toegankelijk is."
           subject=""
         />
-        <PageSubHeader
-          smallTitleTop="Box 3-vriendelijk"
-          iconName="Euro"
-          title="Buitenlands vastgoed valt niet volledig onder de Nederlandse Box 3-heffing. Door het belastingverdrag tussen Nederland en Indonesië wordt dubbele belasting voorkomen. In de praktijk betaal je in Nederland géén vermogensbelasting over dit object."
-        />
         <OneImageStretched
           img={{
             src: "/one-image-stretched/test-1.jpg",
             alt: "Voorzijde villa",
           }}
+        />
+        <PageSubHeader
+          smallTitleTop="Box 3-vriendelijk"
+          iconName="Euro"
+          title="Buitenlands vastgoed valt niet volledig onder de Nederlandse Box 3-heffing. Door het belastingverdrag tussen Nederland en Indonesië wordt dubbele belasting voorkomen. In de praktijk betaal je in Nederland géén vermogensbelasting over dit object."
         />
         <InvestmentExplainer />
       </main>

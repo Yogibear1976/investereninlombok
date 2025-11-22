@@ -23,16 +23,18 @@ export const AboutSection = ({ imgA, imgB }: AboutSectionProps) => {
           <div className="flex flex-col items-start gap-10">
             {/* Heading & Text */}
             <div className="flex flex-col items-start gap-8">
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight">
-                Over ons
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tighter">
+                Over mij
               </h2>
 
-              <p className="max-w-[520px] text-xl sm:text-2xl font-normal tracking-tight">
-                We begeleiden{" "}
-                <span className="font-medium text-sky">investeerders</span> die
-                op zoek zijn naar een veilige en rendabele investering in
-                villa's op Lombok, Indonesië. We regelen alles: van
-                grondselectie en vergunningen tot{" "}
+              <p className="max-w-[600px] text-xl sm:text-2xl font-light tracking-tight">
+                Ik begeleid{" "}
+                <span className="font-medium text-sky">
+                  Nederlandse investeerders
+                </span>{" "}
+                die op zoek zijn naar een veilige en rendabele investering in
+                villa's op Lombok, Indonesië. Ik regel samen met mijn lokale
+                team alles: van grondselectie en vergunningen tot{" "}
                 <span className="font-medium text-sky">bouw</span> en{" "}
                 <span className="font-medium text-sky">verhuurmanagement</span>.
               </p>

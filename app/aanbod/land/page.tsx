@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import { OneImageStretched } from "@/components/images/one-image-stretched";
 import { PageHeader } from "@/components/headers/page-header";
 import { PropertyCardSmall } from "@/components/cards/property-card-small";
 import { PageSubHeader } from "@/components/headers/page-sub-header";
@@ -69,6 +69,12 @@ export default async function LandPropertiesPage() {
     <div className="h-full w-full">
       <main>
         <PageHeader title="aanbod" subheader="..." subject="Land" />
+        <OneImageStretched
+          img={{
+            src: "/one-image-stretched/test-1.jpg",
+            alt: "Voorzijde villa",
+          }}
+        />
         <PageSubHeader
           smallTitleTop="Geplande villas en projecten"
           iconName="Construction"

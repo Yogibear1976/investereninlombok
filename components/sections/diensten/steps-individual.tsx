@@ -2,18 +2,17 @@
 
 import * as React from "react";
 import { Badge } from "@/components/ui/badge";
-
 import {
-  MessageCircleMoreIcon,
-  LocateIcon,
-  BadgeEuro,
-  FilesIcon,
-  Handshake,
-  NotebookPen,
-  HandCoins,
-  KeySquare,
-  BriefcaseBusiness,
-} from "lucide-react";
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+import Link from "next/link";
+
+import { CircleCheckBig, ArrowRight } from "lucide-react";
 
 export const StepsIndividual = () => {
   const samodules = [
@@ -22,63 +21,63 @@ export const StepsIndividual = () => {
       title: "Neem contact op met ons",
       description:
         "We brengen je in contact met onze betrouwbare lokale makelaars en advocaten, die je stap voor stap begeleiden tijdens het hele aankoopproces.",
-      icon: <MessageCircleMoreIcon className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 2,
       title: "Kies je ideale locatie",
       description:
         "Bedenk in welke regio van Zuid-Lombok je wilt investeren. Of je nu kiest voor het bruisende Kuta, rustige kustgebieden of opkomende dorpen: de locatie bepaalt voor een groot deel je rendement.",
-      icon: <LocateIcon className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 3,
       title: "Doe een bod en onderhandel",
       description:
         "Goed onderhandelen hoort erbij in Indonesië. Samen zorgen we ervoor dat je een eerlijke prijs betaalt en een goede deal sluit.",
-      icon: <BadgeEuro className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 4,
       title: "Verzamel de benodigde documenten",
       description:
         "Zorg dat alle papieren in orde zijn, zoals je paspoort en de eigendomsdocumenten van het vastgoed. Wij helpen je controleren of alles klopt voordat je verder gaat.",
-      icon: <FilesIcon className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 5,
       title: "Optioneel: Richt een PMA op",
       description:
         "Wil je een freehold eigendom? Dan is een PMA noodzakelijk. Dit kost wat tijd, maar biedt wel de mogelijkheid om grond volledig op naam van je bedrijf te zetten.",
-      icon: <BriefcaseBusiness className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 6,
       title: "Rond de aankoop af bij de notaris",
       description:
         "Elke vastgoedtransactie in Indonesië wordt officieel vastgelegd bij een notaris. Deze zorgt ervoor dat alle documenten correct worden geregistreerd.",
-      icon: <Handshake className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 7,
       title: "Voer de betaling uit",
       description:
         "Na het ondertekenen betaal je de koopsom en eventuele bijkomende kosten, zoals notariskosten en belastingen.",
-      icon: <HandCoins className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 8,
       title: "Registratie bij het Kadaster",
       description:
         "Tot slot wordt het eigendom geregistreerd bij het Indonesische kadaster, zodat het officieel op jouw naam staat.",
-      icon: <NotebookPen className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 9,
       title: "Laat het property management aan ons over",
       description:
         "Ons lokale team verzorgt alles: van dagelijks onderhoud tot gastbeleving op vijfsterrenniveau. Zo blijft je villa in topconditie en behaal je de beste verhuurresultaten.",
-      icon: <KeySquare className="w-5 h-5 text-sky" />,
+      icon: <CircleCheckBig className="w-4 h-4" />,
     },
   ];
 
@@ -89,20 +88,33 @@ export const StepsIndividual = () => {
         <div className="flex flex-col w-full md:max-w-3xl lg:max-w-6xl gap-6">
           <h3 className="text-4xl lg:text-5xl font-light tracking-tight">
             Stappenplan voor{" "}
-            <span className="text-sky font-medium">individueel</span> vastgoed
-            aankopen in Lombok.
+            <span className="text-sky font-medium">individueel</span> een villa
+            laten bouwen in Lombok.
           </h3>
 
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
-            Volg deze stappen met mij om een veilig en soepel aankoopproces te
+            Volg deze stappen met mij om een veilig en soepel bouwproces te
             doorlopen:
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
-          {samodules.map((item) => (
-            <SAModule key={item.step} {...item} />
-          ))}
+        <div className="relative px-4">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2">
+              {samodules.map((item) => (
+                <CarouselItem
+                  key={item.step}
+                  className="pl-2 basis-full sm:basis-1/2 lg:basis-1/3"
+                >
+                  <div className="h-full">
+                    <SAModule {...item} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0 -translate-x-1/2" />
+            <CarouselNext className="right-0 translate-x-1/2" />
+          </Carousel>
         </div>
       </div>
     </section>
@@ -121,24 +133,33 @@ const SAModule = ({
   icon: React.ReactNode;
 }) => {
   return (
-    <div className="relative border border-border p-4 pt-4 bg-muted/60 hover:bg-secondary transition-colors overflow-hidden">
+    <div className="relative h-full flex flex-col border border-border p-4 pt-4 bg-muted/60 hover:bg-secondary transition-colors overflow-hidden">
       {/* Step number */}
-      <span className="absolute top-2 right-3 text-5xl font-bold text-sky/30 select-none">
+      <span className="absolute top-2 right-3 text-5xl font-bold text-nature/30 select-none">
         {step}
       </span>
 
-      {/* Icon absolute top-left */}
-      <div className="absolute top-2 left-2 text-sky">{icon}</div>
-
-      {/* Title */}
-      <h4 className="text-base font-semibold uppercase relative z-10 pl-4">
-        {title}
-      </h4>
+      {/* Title + Icon inline */}
+      <div className="flex items-start gap-1 relative z-10">
+        <div className="text-nature pt-1">{icon}</div>
+        <h4 className="text-base font-semibold uppercase mr-8">{title}</h4>
+      </div>
 
       {/* Description */}
       <p className="text-sm text-muted-foreground leading-relaxed mt-3 relative z-10">
         {description}
       </p>
+
+      {/* Extra button only for step 1 */}
+      {step === 1 && (
+        <Link
+          href="/eigen-villa"
+          className="relative z-10 inline-flex items-center gap-1 mt-3 text-sky font-semibold hover:underline"
+        >
+          <ArrowRight className="w-4 h-4" />
+          Meer over individueel investeren
+        </Link>
+      )}
     </div>
   );
 };
