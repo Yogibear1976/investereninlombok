@@ -18,65 +18,65 @@ export const StepsIndividual = () => {
   const samodules = [
     {
       step: 1,
-      title: "Neem contact op met ons",
+      title: "Plan een vrijblijvend kennismakingsgesprek met me in",
       description:
-        "We brengen je in contact met onze betrouwbare lokale makelaars en advocaten, die je stap voor stap begeleiden tijdens het hele aankoopproces.",
+        "We bespreken je wensen, budget en ideeën voor jouw droomvilla. Mijn team begeleidt je vanaf de eerste schets tot de sleuteloverdracht.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 2,
-      title: "Kies je ideale locatie",
+      title: "Kies jouw perfecte kavel",
       description:
-        "Bedenk in welke regio van Zuid-Lombok je wilt investeren. Of je nu kiest voor het bruisende Kuta, rustige kustgebieden of opkomende dorpen: de locatie bepaalt voor een groot deel je rendement.",
+        "Samen bekijken we welke kavels in Zuid-Lombok het beste passen bij jouw wensen. Denk aan uitzicht, bereikbaarheid, privacy en toekomstige waardeontwikkeling.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 3,
-      title: "Doe een bod en onderhandel",
+      title: "Ontwerp je villa met onze architecten",
       description:
-        "Goed onderhandelen hoort erbij in Indonesië. Samen zorgen we ervoor dat je een eerlijke prijs betaalt en een goede deal sluit.",
+        "Je werkt samen met ervaren architecten die gespecialiseerd zijn in tropische, duurzame en luxueuze designs. Van plattegrond tot render: jij bepaalt de stijl.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 4,
-      title: "Verzamel de benodigde documenten",
+      title: "Ontvang een transparante bouwofferte",
       description:
-        "Zorg dat alle papieren in orde zijn, zoals je paspoort en de eigendomsdocumenten van het vastgoed. Wij helpen je controleren of alles klopt voordat je verder gaat.",
+        "Op basis van het ontwerp stellen we een gedetailleerde offerte op, inclusief materialen, planning en kosten. Geen verrassingen achteraf.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 5,
-      title: "Optioneel: Richt een PMA op",
+      title: "Regel de juridische structuur (indien nodig)",
       description:
-        "Wil je een freehold eigendom? Dan is een PMA noodzakelijk. Dit kost wat tijd, maar biedt wel de mogelijkheid om grond volledig op naam van je bedrijf te zetten.",
+        "Afhankelijk van je situatie helpen we je met het opzetten van een PMA of het vastleggen van een Leasehold-constructie, zodat alles veilig en juridisch correct is.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 6,
-      title: "Rond de aankoop af bij de notaris",
+      title: "Start de bouw van je villa",
       description:
-        "Elke vastgoedtransactie in Indonesië wordt officieel vastgelegd bij een notaris. Deze zorgt ervoor dat alle documenten correct worden geregistreerd.",
+        "Ons lokale bouwteam gaat aan de slag. Je ontvangt regelmatige updates, foto's en video's zodat je het project nauw kunt volgen, ook op afstand.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 7,
-      title: "Voer de betaling uit",
+      title: "Controleer de voortgang en kwaliteitsrondes",
       description:
-        "Na het ondertekenen betaal je de koopsom en eventuele bijkomende kosten, zoals notariskosten en belastingen.",
+        "Tijdens de bouw voeren we meerdere kwaliteitscontroles uit. Zo garanderen we dat elke fase voldoet aan de hoogste standaarden.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 8,
-      title: "Registratie bij het Kadaster",
+      title: "Oplevering en inrichting",
       description:
-        "Tot slot wordt het eigendom geregistreerd bij het Indonesische kadaster, zodat het officieel op jouw naam staat.",
+        "Zodra de bouw voltooid is, lopen we samen door de villa voor de oplevering. Indien gewenst verzorgen we ook de volledige inrichting en styling.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
     {
       step: 9,
-      title: "Laat het property management aan ons over",
+      title: "Optioneel: Professioneel verhuur & beheer",
       description:
-        "Ons lokale team verzorgt alles: van dagelijks onderhoud tot gastbeleving op vijfsterrenniveau. Zo blijft je villa in topconditie en behaal je de beste verhuurresultaten.",
+        "Wil je je villa verhuren wanneer je er niet bent? Ons ervaren property management team regelt alles: onderhoud, schoonmaak, marketing en gastenservice.",
       icon: <CircleCheckBig className="w-4 h-4" />,
     },
   ];

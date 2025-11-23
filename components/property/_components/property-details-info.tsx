@@ -59,8 +59,8 @@ export const PropertyDetailsInfo = ({ property }: PropertyDetailsInfoProps) => {
           {[
             { label: "Prijs IDR", value: formatIdrPrice(indoPrice) },
             { label: "Woonoppervlak", value: formatToNvt(livingArea) },
-            { label: "Slaapkamers", value: formatToNvt(bedrooms) },
-            { label: "Badkamers", value: formatToNvt(bathrooms) },
+            { label: "Slaapkamers", value: formatToNvtYear(bedrooms) },
+            { label: "Badkamers", value: formatToNvtYear(bathrooms) },
             { label: "Grondoppervlak", value: `${formatArea(landArea)} m²` },
             { label: "Bouwjaar", value: formatToNvtYear(yearCompleted) },
             { label: "Voorzieningen", value: formatFeatures(features) },

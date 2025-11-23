@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 export default async function ExistingPropertyPage({
   params,
 }: {
-  params: ParamsShape | Promise<ParamsShape>;
+  params: Promise<ParamsShape>;
 }) {
   const { slug } = await params;
   if (!slug) return notFound();

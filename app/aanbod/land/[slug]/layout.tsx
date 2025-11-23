@@ -7,17 +7,18 @@ export default async function ExistingLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const currentProperty = await prisma.property.findUnique({
-    where: { slug: params.slug },
+    where: { slug },
     select: { id: true, type: true },
   });
 
   const landProperties = await prisma.property.findMany({
     where: {
-      type: currentProperty?.type, // fetch properties of same type
-      id: { not: currentProperty?.id },
+      type: currentProperty?.type, // same type
+      id: { not: currentProperty?.id }, // exclude current
     },
     orderBy: { createdAt: "desc" },
   });

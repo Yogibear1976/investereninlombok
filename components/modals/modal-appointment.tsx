@@ -82,15 +82,15 @@ export const ModalAppointment = ({
   const items = [
     {
       id: "buying",
-      label: "Aankopen van vastgoed",
+      label: "Aankopen van bestaand vastgoed",
     },
     {
-      id: "land",
-      label: "Aankopen van grond",
+      id: "own_villa",
+      label: "Eigen villa laten bouwen",
     },
     {
-      id: "projects",
-      label: "Investeren in projecten",
+      id: "invest_projects",
+      label: "Collectief investeren in projecten",
     },
     {
       id: "management",

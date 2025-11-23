@@ -14,10 +14,10 @@ export async function generateStaticParams() {
   return properties.map((p) => ({ slug: p.slug }));
 }
 
-export default async function UnderConstructionPropertyPage({
+export default async function ExistingPropertyPage({
   params,
 }: {
-  params: ParamsShape | Promise<ParamsShape>;
+  params: Promise<ParamsShape>;
 }) {
   const { slug } = await params;
   if (!slug) return notFound();

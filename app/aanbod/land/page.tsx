@@ -76,10 +76,10 @@ export default async function LandPropertiesPage() {
           }}
         />
         <PageSubHeader
-          smallTitleTop="Geplande villas en projecten"
-          iconName="Construction"
-          title="Deze projecten staan in de planning:"
-          description="Een off-plan investering biedt de kans om vroeg in te stappen tegen een lagere prijs, te profiteren van waardestijging tijdens de bouw en bij oplevering direct rendement te behalen met een gloednieuw object."
+          smallTitleTop="Aanbod van kavels in Zuid-Lombok"
+          iconName="LandPlot"
+          title="Deze kavels zijn momenteel beschikbaar:"
+          description="Investeren in land in Zuid-Lombok biedt de mogelijkheid om vroeg in te stappen in een snelgroeiende regio, te profiteren van waardestijging na aankoop en volledige vrijheid te behouden om later te bouwen, door te verkopen of gezamenlijk te ontwikkelen."
         />
         <div className="max-w-7xl mx-auto w-full px-4">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
